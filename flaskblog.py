@@ -31,7 +31,10 @@ def about():
 @app.route("/contact")
 def contact():
     return render_template('contact.html', title='Contact')
-
+@app.route("/registration")
+@app.route("/register")
+def register():
+    return render_template('register.html', title='registration')
 
 if __name__ == '__main__':
     app.run(debug=True)
